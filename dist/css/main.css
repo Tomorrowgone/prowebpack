@@ -241,118 +241,387 @@ a {
     width: 1190px;
     margin: 0 auto;
     position: relative; }
-    #banner_wrap #banner .proUl {
-      position: absolute;
-      left: 0;
-      top: 0;
-      border-left: 1px solid #FF0000;
-      border-right: 1px solid #FF0000;
-      border-bottom: 1px solid #FF0000; }
-      #banner_wrap #banner .proUl li:nth-child(1) .proList {
-        top: 0; }
-      #banner_wrap #banner .proUl li:nth-child(2) .proList {
-        top: -39px; }
-      #banner_wrap #banner .proUl li:nth-child(3) .proList {
-        top: -78px; }
-      #banner_wrap #banner .proUl li:nth-child(4) .proList {
-        top: -117px; }
-      #banner_wrap #banner .proUl li:nth-child(5) .proList {
-        top: -156px; }
-      #banner_wrap #banner .proUl li:nth-child(6) .proList {
-        top: -195px; }
-      #banner_wrap #banner .proUl li:nth-child(7) .proList {
-        top: -234px; }
-      #banner_wrap #banner .proUl li:nth-child(8) .proList {
-        top: -273px; }
-      #banner_wrap #banner .proUl li:nth-child(9) .proList {
-        top: -312px; }
-      #banner_wrap #banner .proUl li:nth-child(10) .proList {
-        top: -351px; }
-      #banner_wrap #banner .proUl li:hover {
-        background: #ffe4dc; }
-      #banner_wrap #banner .proUl li .proList {
-        display: none; }
-      #banner_wrap #banner .proUl li:hover .proList {
-        display: block; }
-      #banner_wrap #banner .proUl li {
-        margin: 0;
-        padding: 0;
-        background: #fff;
-        width: 140px;
-        height: 39px;
-        line-height: 39px;
-        padding-left: 20px;
-        position: relative;
-        cursor: pointer; }
-        #banner_wrap #banner .proUl li .font {
-          padding: 0;
+    #banner_wrap #banner .bannerLeft {
+      width: 900px;
+      height: 632px; }
+      #banner_wrap #banner .bannerLeft .proUl {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10000;
+        border-left: 1px solid #FF0000;
+        border-right: 1px solid #FF0000;
+        border-bottom: 1px solid #FF0000; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(1) .proList {
+          top: 0; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(2) .proList {
+          top: -52px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(3) .proList {
+          top: -104px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(4) .proList {
+          top: -156px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(5) .proList {
+          top: -208px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(6) .proList {
+          top: -260px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(7) .proList {
+          top: -312px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(8) .proList {
+          top: -364px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(9) .proList {
+          top: -416px; }
+        #banner_wrap #banner .bannerLeft .proUl li:nth-child(10) .proList {
+          top: -468px; }
+        #banner_wrap #banner .bannerLeft .proUl li:hover {
+          background: #ffe4dc; }
+        #banner_wrap #banner .bannerLeft .proUl li .proList {
+          display: none; }
+        #banner_wrap #banner .bannerLeft .proUl li:hover .proList {
+          display: block; }
+        #banner_wrap #banner .bannerLeft .proUl li {
           margin: 0;
-          display: inline-block;
-          width: 20px;
-          height: 19px; }
-        #banner_wrap #banner .proUl li span {
-          display: inline-block;
-          width: 75px;
-          height: 19px; }
-        #banner_wrap #banner .proUl li strong {
-          display: inline-block;
-          width: 20px;
-          height: 19px;
-          font-weight: 100; }
-        #banner_wrap #banner .proUl li .proList {
-          position: absolute;
-          width: 640px;
-          height: 369px;
+          padding: 0;
           background: #fff;
-          padding-top: 20px;
-          padding-right: 300px;
-          right: -943px;
-          top: -10000px;
-          border: 1px solid #FF0000; }
-          #banner_wrap #banner .proUl li .proList .propice {
-            background: #fff;
-            width: 280px;
-            height: 120px;
-            z-index: 11111;
-            float: left; }
-            #banner_wrap #banner .proUl li .proList .propice h2 {
-              width: 280px;
-              height: 24px;
-              line-height: 24px;
-              font-size: 14px;
-              color: #000;
-              border-bottom: 1px solid #999; }
-            #banner_wrap #banner .proUl li .proList .propice div {
-              height: 120px; }
-              #banner_wrap #banner .proUl li .proList .propice div a:nth-child(4) {
-                color: red; }
-              #banner_wrap #banner .proUl li .proList .propice div a:nth-child(1) {
-                color: red; }
-              #banner_wrap #banner .proUl li .proList .propice div a {
-                display: inline-block;
-                padding: 0 5px;
-                font-size: 12px;
-                line-height: 14px;
-                color: #000; }
-    #banner_wrap #banner .bannerMid {
-      margin-left: 170px;
-      width: 520px;
-      height: 390px; }
-      #banner_wrap #banner .bannerMid .scrollImg {
-        width: 520px;
-        height: 245px;
-        overflow: hidden;
-        position: relative; }
-        #banner_wrap #banner .bannerMid .scrollImg .autoImg {
-          width: 2600px;
-          height: 245px; }
-          #banner_wrap #banner .bannerMid .scrollImg .autoImg li {
+          width: 140px;
+          height: 52px;
+          line-height: 39px;
+          padding-left: 20px;
+          position: relative;
+          cursor: pointer; }
+          #banner_wrap #banner .bannerLeft .proUl li .font {
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            width: 20px;
+            height: 19px; }
+          #banner_wrap #banner .bannerLeft .proUl li span {
+            display: inline-block;
+            width: 75px;
+            height: 19px; }
+          #banner_wrap #banner .bannerLeft .proUl li strong {
+            display: inline-block;
+            width: 20px;
+            height: 19px;
+            font-weight: 100; }
+          #banner_wrap #banner .bannerLeft .proUl li .proList {
             position: absolute;
-            width: 520px;
-            height: 245px;
-            float: left; }
-            #banner_wrap #banner .bannerMid .scrollImg .autoImg li img {
-              display: block;
-              float: left;
+            width: 630px;
+            height: 500px;
+            background: #fff;
+            padding-top: 20px;
+            right: -633px;
+            top: -10000px;
+            border: 1px solid #FF0000; }
+            #banner_wrap #banner .bannerLeft .proUl li .proList .propice {
+              background: #fff;
+              width: 280px;
+              height: 120px;
+              z-index: 11111;
+              float: left; }
+              #banner_wrap #banner .bannerLeft .proUl li .proList .propice h2 {
+                width: 280px;
+                height: 24px;
+                line-height: 24px;
+                font-size: 14px;
+                color: #000;
+                border-bottom: 1px solid #999; }
+              #banner_wrap #banner .bannerLeft .proUl li .proList .propice div {
+                height: 140px; }
+                #banner_wrap #banner .bannerLeft .proUl li .proList .propice div a:nth-child(4) {
+                  color: red; }
+                #banner_wrap #banner .bannerLeft .proUl li .proList .propice div a:nth-child(1) {
+                  color: red; }
+                #banner_wrap #banner .bannerLeft .proUl li .proList .propice div a {
+                  display: inline-block;
+                  padding: 0 5px;
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: #000; }
+      #banner_wrap #banner .bannerLeft .bannerMid {
+        margin-left: 170px;
+        width: 520px;
+        height: 521px; }
+        #banner_wrap #banner .bannerLeft .bannerMid .scrollImg {
+          width: 520px;
+          height: 280px;
+          overflow: hidden;
+          position: relative; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .autoImg {
+            margin-top: 10px;
+            width: 2600px;
+            height: 280px;
+            position: absolute; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .autoImg li {
+              position: relative;
               width: 520px;
-              height: 245px; }
+              height: 280px;
+              float: left; }
+              #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .autoImg li img {
+                display: block;
+                float: left;
+                width: 520px;
+                height: 280px; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .auIndex {
+            position: absolute;
+            left: 200px;
+            bottom: 20px;
+            width: 70px;
+            height: 13px; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .auIndex li {
+              float: left;
+              margin: 3px;
+              width: 8px;
+              height: 8px;
+              background: #fff;
+              border-radius: 50%; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .auIndex .current {
+              background: red; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .last {
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 110px;
+            background: #999999; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg .next {
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 110px;
+            background: #999999; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg:hover .next {
+            display: block; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg:hover .last {
+            display: block; }
+        #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 {
+          width: 520px;
+          height: 230px;
+          overflow: hidden;
+          position: relative;
+          padding-top: 10px;
+          background: #fff; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .scrollPice {
+            width: 520px;
+            height: 22px;
+            padding-top: 11px;
+            border-bottom: 3px solid #ff1648; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .scrollPice .scrollImgIndex {
+              color: red;
+              float: right;
+              display: block;
+              line-height: 18px; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .scrollPice em {
+              color: red;
+              font-size: 14px; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .scrollPice strong {
+              font-size: 14px;
+              padding-left: 25px;
+              font-weight: 100; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .scrollPice span {
+              display: block;
+              line-height: 18px;
+              float: right;
+              margin-right: 20px; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .autoImg1 {
+            width: 2600px;
+            height: 200px;
+            position: absolute; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .autoImg1 li {
+              position: relative;
+              width: 520px;
+              height: 200px;
+              float: left; }
+              #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .autoImg1 li img {
+                display: block;
+                float: left;
+                width: 520px;
+                height: 200px; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .auIndex1 {
+            position: absolute;
+            left: 200px;
+            bottom: 20px;
+            width: 70px;
+            height: 13px; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .auIndex1 li {
+              float: left;
+              margin: 3px;
+              width: 8px;
+              height: 8px;
+              background: #fff;
+              border-radius: 50%; }
+            #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .auIndex1 .current1 {
+              background: red; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .last1 {
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 110px;
+            background: #999999; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1 .next1 {
+            width: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #fff;
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 110px;
+            background: #999999; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1:hover .next1 {
+            display: block; }
+          #banner_wrap #banner .bannerLeft .bannerMid .scrollImg1:hover .last1 {
+            display: block; }
+      #banner_wrap #banner .bannerLeft .bannerImg {
+        width: 160px;
+        height: 521px;
+        position: absolute;
+        left: 720px;
+        bottom: 100px; }
+        #banner_wrap #banner .bannerLeft .bannerImg h3 {
+          height: 30px;
+          width: 160px;
+          background: #f4f4f4; }
+          #banner_wrap #banner .bannerLeft .bannerImg h3 p {
+            width: 160px;
+            height: 26px;
+            font-weight: 100;
+            font-size: 12px;
+            background: #f4f4f4;
+            line-height: 26px;
+            font-weight: 100; }
+      #banner_wrap #banner .bannerLeft .toutiao {
+        margin-top: 10px;
+        background: #fff;
+        padding: 14px 14px 12px 20px;
+        height: auto;
+        overflow: hidden; }
+        #banner_wrap #banner .bannerLeft .toutiao .toutiaoTit {
+          width: 180px;
+          height: 73px;
+          float: left;
+          background: url("//img.alicdn.com/tfs/TB1KbhkbUgQMeJjy0FeXXXOEVXa-129-26.png") 0 14px no-repeat; }
+          #banner_wrap #banner .bannerLeft .toutiao .toutiaoTit p {
+            margin-top: 42px;
+            font-size: 14px;
+            font-weight: 100;
+            padding-top: 10px; }
+        #banner_wrap #banner .bannerLeft .toutiao .autoToutiao {
+          float: left;
+          display: block;
+          width: 676px;
+          height: 73px; }
+          #banner_wrap #banner .bannerLeft .toutiao .autoToutiao img {
+            display: block;
+            width: 130px;
+            height: 73px;
+            float: left; }
+          #banner_wrap #banner .bannerLeft .toutiao .autoToutiao h4 {
+            padding-left: 10px;
+            width: 536px;
+            font-style: normal;
+            height: 28px;
+            line-height: 28px;
+            margin-top: 2px;
+            float: left;
+            font-size: 16px;
+            font-weight: 100;
+            color: #333; }
+          #banner_wrap #banner .bannerLeft .toutiao .autoToutiao p {
+            padding-left: 10px;
+            color: #999;
+            width: 536px;
+            height: 36px;
+            float: left;
+            font-size: 14px; }
+    #banner_wrap #banner .bannerRight {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 290px;
+      height: 622px;
+      float: left; }
+      #banner_wrap #banner .bannerRight .userinfo {
+        width: 290px;
+        padding: 3px 0 10px 0;
+        height: 132px;
+        padding-right: inherit;
+        text-align: center;
+        background: url("../images/bannerRight_bg.jpg") no-repeat;
+        background-size: 290px; }
+        #banner_wrap #banner .bannerRight .userinfo .userImg {
+          width: 74px;
+          height: 56px;
+          margin: 0 auto; }
+          #banner_wrap #banner .bannerRight .userinfo .userImg a {
+            display: inline-block;
+            border: 3px solid #fff; }
+        #banner_wrap #banner .bannerRight .userinfo p {
+          height: 17px;
+          line-height: 17px; }
+          #banner_wrap #banner .bannerRight .userinfo p a {
+            font-size: 12px;
+            border-radius: 9px;
+            background-clip: padding-box;
+            background: #ffe4db;
+            padding: 0 10px 0 20px;
+            position: relative;
+            border: none;
+            background: url("../images/userbg.jpg") no-repeat left -528px;
+            color: #ff5000 !important; }
+          #banner_wrap #banner .bannerRight .userinfo p a:nth-child(2) {
+            background: url("../images/userbg.jpg") no-repeat left -573px; }
+        #banner_wrap #banner .bannerRight .userinfo .log_reg {
+          height: 40px;
+          overflow: hidden;
+          margin-top: 8px;
+          padding-left: 15px; }
+          #banner_wrap #banner .bannerRight .userinfo .log_reg a {
+            width: 80px;
+            display: block;
+            float: left;
+            margin-right: 7px;
+            text-align: center;
+            background: #ff5000;
+            color: #fff;
+            border-radius: 4px;
+            background-clip: padding-box;
+            font-size: 14px;
+            font-weight: 700; }
+          #banner_wrap #banner .bannerRight .userinfo .log_reg a:nth-child(3) {
+            margin-right: 0; }
+      #banner_wrap #banner .bannerRight .userTit {
+        position: relative;
+        padding-left: 82px;
+        display: block;
+        height: 26px;
+        line-height: 26px;
+        background: #ffe4dd;
+        font-size: 12px; }
+        #banner_wrap #banner .bannerRight .userTit a {
+          color: #f40; }
+        #banner_wrap #banner .bannerRight .userTit span {
+          position: absolute;
+          right: 52px;
+          top: 9px;
+          line-height: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          margin-left: 32px;
+          border-width: 5px 0 5px 7px;
+          border-color: transparent transparent transparent #f40; }
