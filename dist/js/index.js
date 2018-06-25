@@ -102,4 +102,14 @@ $(function(){
             })
 		  }
 		  autoImg1();
+		  
+		  
+		  /*-------userTab_List菜单--------*/
+		 function userTab_List(){
+		 	$(".userTab_List li").hover(function(){
+		 		var _index = $(this).index();
+		 		$(".notice_list ul").eq(_index).css("display","block").siblings().css("display","none");
+		 	})
+		 }
+		 userTab_List();
 })
