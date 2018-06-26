@@ -17,7 +17,7 @@ gulp.task("copy-image",function(){
 	gulp.src("img/**").pipe(gulp.dest("dist/images")).pipe(connect.reload());
 })
 gulp.task("html",function(){
-	gulp.src("html/**").pipe(gulp.dest("dist/htmls")).pipe(connect.reload());
+	gulp.src("htmls/**").pipe(gulp.dest("dist/htmls")).pipe(connect.reload());
 })
 gulp.task("copy-data",function(){
 	gulp.src("data/**").pipe(gulp.dest("dist/data")).pipe(connect.reload());
@@ -39,6 +39,6 @@ gulp.task("server",function(){
 	gulp.watch("css/*.scss",["copy-sass"]);	
 	gulp.watch("js/**",["copy-js"]);
 	gulp.watch("data/**",["copy-data"]);
-	gulp.watch("html/**",["html"]);
+	gulp.watch("htmls/**",["html"]);
 })
 gulp.task("default",["server"]);

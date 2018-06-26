@@ -1150,3 +1150,302 @@ a {
               font-weight: 100;
               font-size: 14px;
               color: #666; }
+
+/*--------betterPrice-------*/
+#betterPrice_wrap {
+  width: 100%;
+  height: 251px; }
+  #betterPrice_wrap #betterPrice {
+    width: 1190px;
+    height: 251px;
+    margin: 0 auto;
+    background: #fff; }
+    #betterPrice_wrap #betterPrice h2 {
+      position: relative;
+      padding-left: 32px;
+      margin-top: 5px;
+      line-height: 48px;
+      font-size: 20px; }
+      #betterPrice_wrap #betterPrice h2 em {
+        color: #31ba98; }
+    #betterPrice_wrap #betterPrice ul li {
+      width: 216px;
+      height: 200px;
+      border: 1px solid #EDEDED;
+      padding-left: 20px;
+      float: left; }
+      #betterPrice_wrap #betterPrice ul li h4 {
+        width: 216px;
+        height: 26px;
+        margin-top: 24px;
+        font-weight: 100;
+        line-height: 26px;
+        font-size: 16px; }
+      #betterPrice_wrap #betterPrice ul li .betterPrice_info {
+        width: 216px;
+        height: 130px; }
+        #betterPrice_wrap #betterPrice ul li .betterPrice_info a {
+          width: 120px;
+          height: 120px;
+          margin-top: 10px;
+          float: left; }
+          #betterPrice_wrap #betterPrice ul li .betterPrice_info a img {
+            display: block;
+            width: 120px;
+            height: 120px; }
+        #betterPrice_wrap #betterPrice ul li .betterPrice_info div {
+          margin-left: 10px;
+          width: 85px;
+          height: 83px;
+          float: left; }
+          #betterPrice_wrap #betterPrice ul li .betterPrice_info div p {
+            margin-top: 22px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333; }
+          #betterPrice_wrap #betterPrice ul li .betterPrice_info div p:nth-of-type(2) {
+            font-size: 14px;
+            margin-top: 8px;
+            color: #777777; }
+          #betterPrice_wrap #betterPrice ul li .betterPrice_info div span {
+            display: block;
+            height: 22px;
+            wdith: 76px;
+            margin-top: 13px;
+            border: 1px solid #ff5000;
+            border-radius: 12px;
+            color: #ff5000;
+            text-align: center;
+            line-height: 22px;
+            font-size: 12px;
+            cursor: pointer; }
+
+/*-----hotGoods_wrap------------*/
+#hotGoods_wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px; }
+  #hotGoods_wrap #hotGoods {
+    width: 1190px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff; }
+    #hotGoods_wrap #hotGoods .hotGoods_tit h2 {
+      position: relative;
+      height: 22px;
+      line-height: 22px;
+      margin: 17px 18px;
+      font-size: 20px;
+      color: #ff242d; }
+    #hotGoods_wrap #hotGoods .hotGoods_tit p {
+      height: 20px;
+      line-height: 20px;
+      padding: 0 0 13px 18px;
+      overflow: hidden; }
+      #hotGoods_wrap #hotGoods .hotGoods_tit p a {
+        display: inline;
+        float: left;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        color: #999;
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px; }
+    #hotGoods_wrap #hotGoods .hotGoods_list {
+      width: 1190px;
+      height: 703px; }
+      #hotGoods_wrap #hotGoods .hotGoods_list li {
+        float: left;
+        width: 196px;
+        height: 310px;
+        padding: 20px;
+        border: 1px solid #EEEEEE;
+        float: left;
+        position: relative;
+        border: 1px;
+        border-color: #eee #eee #eee #fff;
+        border-style: solid; }
+        #hotGoods_wrap #hotGoods .hotGoods_list li:hover {
+          border: 1px solid #F22E00; }
+        #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_img {
+          display: block;
+          width: 197px;
+          height: 197px; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_img img {
+            display: block;
+            width: 197px;
+            height: 197px; }
+        #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_tit {
+          display: block;
+          height: 40px;
+          line-height: 20px;
+          overflow: hidden;
+          margin: 8px 0;
+          color: #666;
+          font-size: 16px; }
+        #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_like {
+          height: 18px;
+          margin-bottom: 17px; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_like span {
+            font-size: 12px;
+            line-height: 18px;
+            float: left; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_like span:nth-child(2) {
+            float: right; }
+        #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_price {
+          height: 22px;
+          line-height: 22px;
+          overflow: hidden; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_price a:nth-child(1) {
+            float: left;
+            font-size: 22px;
+            margin-left: 2px;
+            color: #ff5000;
+            cursor: pointer; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_price a:nth-child(2) {
+            float: left;
+            font-size: 16px;
+            margin-left: 2px;
+            color: #333;
+            border: 0;
+            text-decoration: line-through;
+            cursor: pointer; }
+          #hotGoods_wrap #hotGoods .hotGoods_list li .Hot_price a:nth-child(3) {
+            float: right;
+            font-size: 16px;
+            margin-left: 2px;
+            color: #333;
+            text-decoration: overline;
+            cursor: pointer; }
+
+/*-----------end------*/
+#end_wrap {
+  width: 100%;
+  height: 50px;
+  background: #f4f4f4; }
+  #end_wrap #end {
+    width: 1190px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative; }
+    #end_wrap #end .end_tit {
+      display: block;
+      position: absolute;
+      text-align: center;
+      color: #ccccd0;
+      left: 50%;
+      width: 84px;
+      line-height: 20px;
+      font-size: 18px;
+      margin-left: -42px;
+      font-style: normal;
+      top: 20px; }
+    #end_wrap #end .end_tit:before {
+      content: ' ';
+      position: absolute;
+      height: 0;
+      line-height: 0;
+      border-top: 1px solid #e6e6e6;
+      width: 60px;
+      top: 50%;
+      left: -70px; }
+    #end_wrap #end .end_tit:after {
+      content: ' ';
+      position: absolute;
+      height: 0;
+      line-height: 0;
+      border-top: 1px solid #e6e6e6;
+      width: 60px;
+      top: 50%;
+      right: -70px; }
+
+/*-------help帮助-------*/
+#helper_wrap {
+  width: 100%;
+  height: 180px; }
+  #helper_wrap #helper {
+    width: 1190px;
+    height: 180px;
+    margin: 0 auto; }
+    #helper_wrap #helper ul {
+      width: 1190px;
+      height: 180px; }
+      #helper_wrap #helper ul li {
+        width: 277.5px;
+        padding-top: 40px;
+        float: left;
+        height: 140px; }
+        #helper_wrap #helper ul li h4 {
+          text-indent: 48px;
+          height: 48px;
+          line-height: 48px;
+          font-size: 18px; }
+        #helper_wrap #helper ul li p {
+          width: 100%;
+          height: 42px;
+          line-height: 21px; }
+          #helper_wrap #helper ul li p a {
+            font-size: 14px;
+            padding: 0 5px; }
+
+/*footer*/
+#footer {
+  width: 100%;
+  height: 240px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding-bottom: 9px;
+  margin: 0 auto;
+  background: #fff; }
+  #footer .footer_top {
+    width: 1190px;
+    margin: 0 auto;
+    height: 62px; }
+    #footer .footer_top p {
+      width: 1190px;
+      padding-bottom: 8px;
+      line-height: 27px;
+      height: 54px;
+      border-bottom: 1px solid #ddd; }
+      #footer .footer_top p span:hover a {
+        color: red; }
+      #footer .footer_top p span a {
+        font-size: 12px; }
+      #footer .footer_top p b {
+        margin: 0 3px;
+        font-weight: 400;
+        color: #ddd; }
+  #footer .footer_mid {
+    margin: 0 auto;
+    width: 1190px;
+    height: 81px;
+    margin-top: 10px;
+    overflow: hidden; }
+    #footer .footer_mid p {
+      height: 18px;
+      margin-bottom: 8px;
+      width: 1190px;
+      text-align: center;
+      font-size: 12px; }
+  #footer .footer_btm {
+    width: 1190px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px; }
+    #footer .footer_btm span {
+      float: left;
+      display: block;
+      margin: 0 4px;
+      height: auto;
+      width: auto;
+      padding-left: 4px; }
+      #footer .footer_btm span a {
+        height: 40px;
+        margin-right: 15px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        background: url("https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg") no-repeat; }

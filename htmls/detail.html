@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+		<script src="../js/cookie.js"></script>
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/detail.js"></script>
+		<style type="text/css">
+			img{
+				display: inline-block;
+				border: none;
+			}
+			#zoomBox{
+				position: relative;
+				float: left;
+				width: 400px;
+				border: 1px solid #eee;
+			}
+			#midArea{
+				width: 400px;
+				height: 400px;
+				overflow: hidden;
+			}
+			#midArea img{
+				width: 400px;
+				height: 400px;
+			}
+			#zoom{
+				display: none;
+				position: absolute;
+				width: 200px;
+				height: 200px;
+				background: #ddd;
+				opacity: .5;
+				cursor: move;
+			}
+			#bigArea{
+				display: none;
+				position: absolute;
+				width: 400px;
+				height: 400px;
+				border: 1px solid #eee;
+				left: 430px;
+				top: -1px;
+				overflow: hidden;
+				z-index: 999;
+			}
+			#bigArea img{
+				position: absolute;
+				width: 800px;
+				height: 800px;
+			}
+			#smallArea{
+				height: 50px;
+				padding: 10px;
+				border: 1px solid #eee;
+			}
+			#smallArea img{
+				float: left;
+				margin-left: 10px;
+				width:40px;
+				height: 50px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+				<!--topper-->
+		<div id="topper_wrap">
+			<div id="topper">
+				<ul class="topLeft">
+					<li>
+						<div class="city">
+							<span>中国大陆</span>
+							<span></span>
+						</div>
+						<div class="cityList">
+							1
+						</div>
+					</li>
+					<li>
+						<div class="log_reg">
+							<a href="login.html">亲，请登录</a>
+							<a href="register.tml">免费注册</a>
+						</div>
+					</li>
+					<li>
+						<a href="">手机逛淘宝</a>
+					</li>
+				</ul>
+				<ul class="topRight">
+					<li>
+						<span>我的淘宝</span>
+						<i></i>
+					</li>
+					<li>
+						<strong></strong>
+						<span>购物车</span>
+						<i></i>
+					</li>
+					<li>
+						<strong></strong>
+						<span>收藏夹</span>
+						<i></i>
+					</li>
+					<li>
+						<span>商品分类</span>
+					</li>
+					<li>
+						|
+					</li>
+					<li>
+						<span>卖家中心</span>
+						<i></i>
+					</li>
+					<li>
+						<span>联系客服</span>
+						<i></i>
+					</li>
+					<li>
+						<strong></strong>
+						<span>网站导航</span>
+						<i></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--header-->
+		<div id="header_wrap">
+			<div id="header">
+				<div class="headerLeft">
+					<div class="log">
+						<a href="../index.html"></a>
+					</div>
+				</div>
+				<div class="headerRight">
+					<div class="headerRt">
+						<div class="headerRt_top">
+							<a href="javascript:;">宝贝</a>
+						</div>
+						<ul class="headerRt_topList">
+							<li>
+								<a href="">天猫</a>
+							</li>
+							<li>
+								<a href="">店铺</a>
+							</li>
+						</ul>
+					</div>
+					<form action="" method="post">
+						<span></span>
+						<input type="text" name="search" id="search" value="玫瑰软糖s" />
+						<input class="searchBtn" type="button" value="搜索" />
+						<span></span>
+						<i class="searchImg">
+						
+					</i>
+						<b class="upLoadImg">
+						
+					</b>
+					</form>
+					<div class="headerRb">
+						<p>
+							<a href="">男士凉鞋</a>
+							<a href="">夹克</a>
+							<a href="">时尚连衣裙</a>
+							<a href="">雪纺衫</a>
+							<a href="">衬衫</a>
+							<a href="">新款男鞋</a>
+							<a href="">真丝连衣裙</a>
+							<a href="">阔腿裤</a>
+							<a href="">时尚休闲裤</a>
+							<a href="">防晒衣</a>
+							<a href="">沙发</a>
+
+						</p>
+						<span>
+						<i></i>
+						<strong></strong>
+					</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="detail_wrap">
+			<div id="detail">
+				<h2>
+					商品详细信息
+				</h2>
+				<!--放大镜模块-->
+					<div id="zoomBox">
+						<div id="midArea">
+							<img src="">
+							<div id="zoom"></div>
+						</div>
+						<div id="bigArea">
+							<img src="">
+						</div>
+						<div id="smallArea">
+							<!--点击小图，将中图和大图的img的src换掉-->
+							<img src="" alt="" />
+							
+						</div>
+					</div>
+					<div id="detailInfo">
+						<div class="Info_tit">
+							aaaaaaaaaaaaa
+						</div>
+						<div class="Info_price">
+							<p class="Tprice">
+								<span>
+								￥：
+								</span>
+								<i></i>
+							</p>
+							<p class="Nprice">
+								<span>
+								￥：
+								</span>
+								<i></i>
+							</p>
+						</div>
+						<div class="Info_buy">
+							<a href="">立即购买</a>
+							<a href="">加入购物车</a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>

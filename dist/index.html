@@ -6,6 +6,7 @@
 		<title>首页</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/cookie.js"></script>
 		<script src="js/index.js"></script>
 
 	</head>
@@ -160,7 +161,7 @@
 			<div id="banner">
 				<div class="bannerLeft">
 					<ul class="proUl">
-						<li>
+						<li data-id = "1">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkplg1m99_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>母婴儿童</span>
 							<strong>&gt;</strong>
@@ -246,7 +247,7 @@
 
 							</div>
 						</li>
-						<li>
+						<li data-id = "2">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpnez751_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>美容彩妆</span>
 							<strong>&gt;</strong>
@@ -317,7 +318,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "3">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpo5f994_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>轻奢</span>
 							<strong>&gt;</strong>
@@ -399,7 +400,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "4">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpow3285_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>家具个护</span>
 							<strong>&gt;</strong>
@@ -481,7 +482,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "5">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpq2ue80_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>营养保健</span>
 							<strong>&gt;</strong>
@@ -565,7 +566,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "6">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/1c50sn2pn89_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>手表配饰</span>
 							<strong>&gt;</strong>
@@ -636,7 +637,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "7">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpsh0e98_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>数码家电</span>
 							<strong>&gt;</strong>
@@ -708,7 +709,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "8">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/iqkpr75617_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>环球美食</span>
 							<strong>&gt;</strong>
@@ -781,7 +782,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "11">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/ir26dxt121_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>运动户外</span>
 							<strong>&gt;</strong>
@@ -851,7 +852,7 @@
 								</div>
 							</div>
 						</li>
-						<li>
+						<li data-id = "11">
 							<a class="font" href=""><img src="//haitao.nos.netease.com/1c8cgvm0067_40_40.png?imageView&thumbnail=20x20&quality=100" /></a>
 							<span>服饰鞋靴</span>
 							<strong>&gt;</strong>
@@ -1769,43 +1770,325 @@
 				
 			</div>
 		</div>
-		<div id="betterPrice_wrap">
+		<!--实惠专业户-->
+		<div id="betterPrice_wrap" class="autoFloor">
 			<div id="betterPrice">
 				<h2>
-					<em></em>
+					<em>实惠专业户</em>
 				</h2>
 				<ul>
 					<li>
-						<h4><a href=""></a></h4>
-						<div>
+						<h4><a href="">天天特价</a></h4>
+						<div class="betterPrice_info">
 							<a href=""><img src="images/betterPrice1.jpg"/></a>
 							<div class="">
 								<p>优惠好货</p>
 								<p>特价专区</p>
-								<a href="">全场包邮</a>
+								<span>全场包邮</span>
 							</div>
 						</div>
 					</li>
 					<li>
-						<h4></h4>
-						<div></div>
+						<h4><a href="">天天特价</a></h4>
+						<div class="betterPrice_info">
+							<a href=""><img src="images/betterPrice1.jpg"/></a>
+							<div class="">
+								<p>优惠好货</p>
+								<p>特价专区</p>
+								<span>全场包邮</span>
+							</div>
+						</div>
 					</li>
 					<li>
-						<h4></h4>
-						<div></div>
+						<h4><a href="">天天特价</a></h4>
+						<div class="betterPrice_info">
+							<a href=""><img src="images/betterPrice1.jpg"/></a>
+							<div class="">
+								<p>优惠好货</p>
+								<p>特价专区</p>
+								<span>全场包邮</span>
+							</div>
+						</div>
 					</li>
 					<li>
-						<h4></h4>
-						<div></div>
+						<h4><a href="">天天特价</a></h4>
+						<div class="betterPrice_info">
+							<a href=""><img src="images/betterPrice1.jpg"/></a>
+							<div class="">
+								<p>优惠好货</p>
+								<p>特价专区</p>
+								<span>全场包邮</span>
+							</div>
+						</div>
 					</li>
 					<li>
-						<h4></h4>
-						<div></div>
+						<h4><a href="">天天特价</a></h4>
+						<div class="betterPrice_info">
+							<a href=""><img src="images/betterPrice1.jpg"/></a>
+							<div class="">
+								<p>优惠好货</p>
+								<p>特价专区</p>
+								<span>全场包邮</span>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="footer" style="height: 1000px;width: 100%;"></div>
+		<!--hot热门商品-->
+		<div id="hotGoods_wrap">
+			<div id="hotGoods">
+				<div class="hotGoods_tit">
+					<h2>热卖单品</h2>
+					<p>
+						<a href="">七分裤</a>
+						<a href="">夹克宽松款</a>
+						<a href="">7分裤</a>
+						<a href="">雪纺衫</a>
+						<a href="">民族风</a>
+						<a href="">蕾丝衫</a>
+						<a href="">通勤</a>
+						<a href="">夹克男</a>
+						<a href="">品质棉麻</a>
+						<a href="">防晒衫</a>
+						<a href="">夏上新</a>
+						<a href="">春夏</a>
+						<a href="">一字肩</a>
+						<a href="">开衫</a>
+						<a href="">雪纺</a>
+						<a href="">女特价</a>
+						<a href="">女装夏</a>
+						<a href="">上衣女</a>
+						<a href="">客厅灯</a>
+						<a href="">床垫</a>
+						<a href="">浴室柜</a>
+					</p>
+				</div>
+				<div class="hotGoods_list">
+					<ul>
+						<!--<li>
+							<a class='Hot_img' href=''>
+								<img src='' alt='' />
+							</a>
+							<a class='Hot_tit' href=''></a>
+							<div class='Hot_like'>
+								<span></span>
+								<span></span>
+							</div>
+							<div class='Hot_price'>
+								<a href=""></a>
+								<a href=""></a>
+								<a href=""></a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--猜你喜欢-->
+		<div id="hotGoods_wrap" class="autoFloor">
+			<div id="hotGoods">
+				<div class="hotGoods_tit">
+					<h2>猜你喜欢</h2>
+				</div>
+				<div class="hotGoods_list">
+					<ul>
+						<!--<li>
+							<a class='Hot_img' href=''>
+								<img src='' alt='' />
+							</a>
+							<a class='Hot_tit' href=''></a>
+							<div class='Hot_like'>
+								<span></span>
+								<span></span>
+							</div>
+							<div class='Hot_price'>
+								<a href=""></a>
+								<a href=""></a>
+								<a href=""></a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--END-->
+		<div id="end_wrap">
+			<div id="end">
+				<i class="end_tit">END</i>
+			</div>
+		</div>
+		<!--helper帮助-->
+		<div id="helper_wrap">
+			<div id="helper">
+				<ul>
+					<li>
+						<h4>消费者保障</h4>
+						<p>   
+							<a href="">保障范围</a>
+							<a href="">退货退款流程</a>
+							<a href="">服务中心</a>
+							<a href="">更多特色服务</a>
+						</p>
+					</li>
+					<li>
+						<h4>新手上路</h4>
+						<p>       
+							<a href="">新手专区</a>
+							<a href="">消费警示</a>
+							<a href="">交易安全</a>
+							<a href="">24小时在线帮助</a>
+							<a href="">免费开店</a>
+						</p>
+					</li>
+					<li>
+						<h4>付款方式</h4>
+						<p>       
+							<a href="">快捷支付</a>
+							<a href="">信用卡</a>
+							<a href="">余额宝</a>
+							<a href="">蚂蚁花呗</a>
+							<a href="">货到付款</a>
+						</p>
+					</li>
+					<li>
+						<h4>淘宝特色</h4>
+						<p>     
+							<a href="">手机淘宝</a>
+							<a href="">旺旺/旺信</a>
+							<a href="">大众评审</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer_top">
+				<p>
+					<span>
+						<a href="http://www.alibabagroup.com/cn/global/home">阿里巴巴集团</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="//www.taobao.com">淘宝网</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="//www.tmall.com">天猫</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="//ju.taobao.com">聚划算</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.aliexpress.com">全球速卖通</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.alibaba.com/">阿里巴巴国际交易市场</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.1688.com">1688</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.alimama.com">阿里妈妈</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.fliggy.com/">飞猪</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.aliyun.com">阿里云计算</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.alios.cn/">AliOS</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.aliqin.cn/">阿里通信</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.etao.com/">一淘</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.net.cn">万网</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.autonavi.com/">高德</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.uc.cn/">UC</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="http://www.umeng.com/">友盟</a>
+					</span>
+					<br>
+					<span>
+						<a href="http://www.xiami.com">虾米</a>
+					</span>
+					<b>|</b>
+					<span>
+						<a href="https://www.damai.cn/">大麦网</a>
+					</span><b>|</b>
+					<span>
+						<a href="http://www.dingtalk.com/?lwfrom=20150130160830727">钉钉</a>
+					</span>
+					<b>|</b>
+					<span><a href="https://www.alipay.com">支付宝</a></span>
+					<b>|</b>
+					<span><a href="http://www.youku.com/">优酷</a></span>
+					<b>|</b>
+					<span><a href="http://www.tudou.com/">土豆</a></span>
+					<b>|</b>
+					<span><a href="http://www.alihealth.cn/">阿里健康</a></span>
+					<b>|</b>
+					<span><a href="http://www.alibabapictures.com/simp/0-home.html">阿里影业</a></span>
+					<b>|</b>
+					<span><a href="http://www.alisports.com/cn/">阿里体育</a></span>
+					<b>|</b>
+					<span><a href="https://www.mybank.cn/">网商银行</a></span>
+				</p>
+			</div>
+			<div class="footer_mid">
+				<p>关于淘宝合作伙伴营销中心廉正举报联系客服开放平台诚征英才联系我们网站地图法律声明及隐私权政策知识产权 | © 2003-现在 Taobao.com 版权所有</p>
+				<p>网络文化经营许可证：浙网文[2016]0268-027号|增值电信业务经营许可证：浙B2-20080224|信息网络传播视听许可证：1109364号|互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</p>
+				<p>浙公网安备 33010002000078号 |（浙）网械平台备字[2018]第00004号|出版物网络交易平台服务经营备案证：新出发浙备字第002号|互联网药品信息服务资格证书编号：（浙）-经营性-2018-0010</p>
+			</div>
+			<div class="footer_btm">
+			<span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:0px 0px; width:36px;  background-image: url(//img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif);">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:0px 0px; width:30px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:-40px 0px; width:33px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:-80px 0px; width:50px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:-140px 0px; width:83px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:-240px 0px; width:94px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:0px -18px; width:250px;  background-image: url(//img.alicdn.com/tfs/TB1N7kwRVXXXXbAapXXXXXXXXXX-500-127.png_250x250);">
+            </a></span><span>
+            <a target="_blank"  style="background-position:-650px 0px; width:105px;  ">
+            </a></span><span>
+            <a target="_blank"  class="tb-footer-mod" style="background-position:-345px 0px; width:82px;  ">
+            </a></span><span>
+            <a target="_blank" class="tb-footer-mod" style="background-position:-761px 0px; width:97px;  ">
+            </a></span><span>
+            <a target="_blank"  style="background-position:-884px 0px; width:249px;  ">
+            </a></span></div>
+		</div>
 		
 	</body>
 

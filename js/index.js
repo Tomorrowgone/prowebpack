@@ -112,4 +112,52 @@ $(function(){
 		 	})
 		 }
 		 userTab_List();
+		 /*进入列表页*/
+		function goProList(){
+			$(".proUl li").click(function(){
+				console.log($(this).attr("data-id"));
+				var classID = $(this).attr("data-id");
+				setCookie("goPro",classID);
+				window.location.href= "htmls/proList.html"
+			})
+		}
+		goProList();
+//		 $.ajax({
+//		 	type:"get",
+//		 	url:"http://datainfo.duapp.com/shopdata/getclass.php",
+//		 	async:true,
+//		 	success:function(data){
+//		 		console.log(data)
+//		 	}
+//		 });
+		 function getHotGoods(){
+		 	$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",function(data){
+		 		var $HotGoodsList = $(".hotGoods_list ul");
+		 		var str ="";
+		 		for (var i =0;i<data.length;i++) {
+		 			str+=`
+		 				<li>
+							<a class='Hot_img' href=''>
+								<img src='${data[i].goodsListImg}' alt='' />
+							</a>
+							<a class='Hot_tit' href=''>${data[i].goodsName}</a>
+							<div class='Hot_like'>
+								<span>月售231</span>
+								<span>收藏4123</span>
+							</div>
+							<div class='Hot_price'>
+								<a href="">
+									￥:
+									<span>${data[i].price}</span>
+								</a>
+								<a href="">￥:${data[i].price+1}</a>
+								<a href=""></a>
+							</div>
+						</li>
+		 			`;
+		 		}
+		 		$HotGoodsList.html(str);
+		 	})
+		 }
+		 getHotGoods();
 })
