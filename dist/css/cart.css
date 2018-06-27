@@ -1,6 +1,7 @@
 #myCartWrap {
   width: 100%;
-  height: auto; }
+  height: auto;
+  background: #fff; }
   #myCartWrap #myCart {
     width: 1090px;
     height: auto;
@@ -48,6 +49,13 @@
         float: right; }
       #myCartWrap #myCart .cartTit div:nth-child(7) {
         width: 87px; }
+    #myCartWrap #myCart ul .empty_cart {
+      font-size: 18px;
+      color: red; }
+      #myCartWrap #myCart ul .empty_cart a {
+        color: green;
+        padding-left: 20px;
+        text-decoration: underline; }
     #myCartWrap #myCart ul li {
       background: #fffbf0;
       height: 80px;
@@ -103,7 +111,8 @@
         text-align: center;
         float: left;
         width: 108px;
-        height: 80px; }
+        height: 65px;
+        padding-top: 15px; }
         #myCartWrap #myCart ul li .cartPrice div:nth-child(1) {
           text-decoration: line-through; }
         #myCartWrap #myCart ul li .cartPrice div {
@@ -114,7 +123,8 @@
         text-align: center;
         float: left;
         width: 123px;
-        height: 80px; }
+        height: 65px;
+        padding-top: 15px; }
         #myCartWrap #myCart ul li .cartCount span {
           display: block;
           width: 87px;
@@ -155,7 +165,8 @@
           text-align: center;
           width: 120px;
           display: block;
-          line-height: 30px; }
+          line-height: 30px;
+          cursor: pointer; }
           #myCartWrap #myCart ul li .cartDelete a:hover {
             text-decoration: underline; }
     #myCartWrap #myCart .titPrice {
@@ -178,6 +189,8 @@
         float: left;
         width: 800px;
         height: 40px;
+        font-size: 18px;
+        color: orangered;
         line-height: 40px;
         padding-right: 20; }
       #myCartWrap #myCart .titPrice .pay {
@@ -192,3 +205,63 @@
         color: #fff;
         height: 60px;
         width: 150px; }
+
+/*footer*/
+#footer {
+  width: 100%;
+  height: 240px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding-bottom: 9px;
+  margin: 0 auto;
+  background: #fff; }
+  #footer .footer_top {
+    width: 1190px;
+    margin: 0 auto;
+    height: 62px; }
+    #footer .footer_top p {
+      width: 1190px;
+      padding-bottom: 8px;
+      line-height: 27px;
+      height: 54px;
+      border-bottom: 1px solid #ddd; }
+      #footer .footer_top p span:hover a {
+        color: red; }
+      #footer .footer_top p span a {
+        font-size: 12px; }
+      #footer .footer_top p b {
+        margin: 0 3px;
+        font-weight: 400;
+        color: #ddd; }
+  #footer .footer_mid {
+    margin: 0 auto;
+    width: 1190px;
+    height: 81px;
+    margin-top: 10px;
+    overflow: hidden; }
+    #footer .footer_mid p {
+      height: 18px;
+      margin-bottom: 8px;
+      width: 1190px;
+      text-align: center;
+      font-size: 12px; }
+  #footer .footer_btm {
+    width: 1190px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px; }
+    #footer .footer_btm span {
+      float: left;
+      display: block;
+      margin: 0 4px;
+      height: auto;
+      width: auto;
+      padding-left: 4px; }
+      #footer .footer_btm span a {
+        height: 40px;
+        margin-right: 15px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        background: url("https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg") no-repeat; }

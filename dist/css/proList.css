@@ -1,10 +1,10 @@
-#proList1 {
+#proList {
   width: 1190px;
   margin: 0 auto;
   height: auto;
   background: #fff;
   overflow: hidden; }
-  #proList1 h2 {
+  #proList h2 {
     height: 24px;
     font-size: 18px;
     color: #35B1FF;
@@ -13,27 +13,27 @@
     margin: 0 auto;
     background: red;
     margin: 10px 0; }
-  #proList1 ul {
+  #proList ul {
     width: 1190px;
     height: auto;
     overflow: hidden;
     padding-top: 20px; }
-    #proList1 ul li {
+    #proList ul li {
       float: left;
       width: 21%;
       height: 400px;
       margin: 5px 20px;
       border: 1px solid #ccc;
       cursor: pointer; }
-      #proList1 ul li .Pro_img {
+      #proList ul li .Pro_img {
         display: block;
         width: 100%;
         height: 300px; }
-        #proList1 ul li .Pro_img img {
+        #proList ul li .Pro_img img {
           display: block;
           width: 100%;
           height: 300px; }
-      #proList1 ul li .Pro_tit {
+      #proList ul li .Pro_tit {
         display: block;
         height: 40px;
         line-height: 20px;
@@ -41,17 +41,17 @@
         margin: 8px 0;
         color: #666;
         font-size: 16px; }
-      #proList1 ul li .Pro_price {
+      #proList ul li .Pro_price {
         height: 22px;
         line-height: 22px;
         overflow: hidden; }
-        #proList1 ul li .Pro_price a:nth-child(1) {
+        #proList ul li .Pro_price a:nth-child(1) {
           float: left;
           font-size: 22px;
           margin-left: 2px;
           color: #ff5000;
           cursor: pointer; }
-        #proList1 ul li .Pro_price a:nth-child(2) {
+        #proList ul li .Pro_price a:nth-child(2) {
           float: left;
           font-size: 16px;
           margin-left: 2px;
@@ -59,7 +59,7 @@
           border: 0;
           text-decoration: line-through;
           cursor: pointer; }
-        #proList1 ul li .Pro_price a:nth-child(3) {
+        #proList ul li .Pro_price a:nth-child(3) {
           float: right;
           font-size: 16px;
           margin-left: 2px;

@@ -1,3 +1,5 @@
+$nowmalwidth:1190px;
+$wrapwidth:100%;
 #detail_wrap{
     width: 100%;
     height: 582px;
@@ -61,6 +63,7 @@
                     border-radius:3px ;
                     background: #F0CAB6; 
                     margin-top: 80px;
+                    cursor: pointer;
                 }
                 a:nth-child(2){
                     width: 182px;
@@ -75,7 +78,81 @@
 }
             
             
-            
+    /*footer*/
+#footer{
+    width: $wrapwidth;
+    height: 240px;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 9px;
+    margin:  0 auto;
+    background: #fff;
+    .footer_top{
+        width: 1190px;
+        margin: 0 auto;
+        height: 62px;
+       p{
+           width: $nowmalwidth;
+            padding-bottom: 8px;
+            line-height: 27px;
+            height: 54px;
+            border-bottom: 1px solid #ddd;
+            span{
+                &:hover a{
+                    color: red;
+                    
+                }
+                a{
+                    font-size: 12px;
+                }
+                
+            }
+            b{
+                margin: 0 3px;
+                font-weight: 400;
+                 color: #ddd;
+             }
+       }
+    }
+    .footer_mid{
+        margin: 0 auto;
+        width: $nowmalwidth;
+        height: 81px;
+        margin-top: 10px;
+        overflow: hidden;
+        p{
+            height: 18px;
+            margin-bottom: 8px;
+            width: 1190px;
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+    .footer_btm{
+        width: 1190px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80px;
+        span{
+            float: left;
+            display: block;
+            margin: 0 4px;
+            height: auto;
+            width: auto;
+            padding-left: 4px;
+            a{
+                height: 40px;
+                margin-right: 15px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                background: url("https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg") no-repeat;
+            }
+        }
+    }
+}
+        
             
             
             

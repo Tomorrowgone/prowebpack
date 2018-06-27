@@ -33,14 +33,27 @@ a{
                 height: 35px;
                 line-height: 35px;
             }
+            li:hover .cityList{
+                display: block;
+            }
             li:nth-child(1){
                 position: relative;
                 width: 79px;
                 height: 35px;
             }
+            li:nth-child(1) ul{
+                border: 1px solid #666;
+            }
             li:nth-child(2){
                 .log_reg{
                     padding: 0 6px;
+                    span{
+                        color: #008000;
+                        
+                    } 
+                    i{
+                        color: red;
+                    }
                     &:hover a{
                         color: red;
                     }
@@ -70,30 +83,57 @@ a{
             
             
             .cityList{
-                position: absolute;
-                top:100px;
                 display: none;
-                width: 300px;
-                background: red;
-                height: 100px;
-//              overflow: hidden;
-                overflow-y:auto ;
+                background: #fff;
+                overflow-y:auto;
+                position: absolute;
+                top:35px;
+                z-index: 9999911111;
+                min-height: 100px;
+                height: auto;
+                overflow: hidden;
+                ul{
+                    overflow-y:auto;
+                    display: 1px solid #000;
+                    z-index: 9999911111;
+                    height: 210px;
+                    width: 300px;
+                    li{
+                      float: none;  
+                      text-indent: 15px;
+                    }
+                }
             }
         }
         .topRight{
             width: 583px;
             height: 35px;
             float: right;
+            li:hover div{
+                display: block;
+            }
+            li:nth-child(2) strong{
+                background: url("../images/gouwuche.png") no-repeat 2px center;
+                background-size:12px ;
+            }
+            li:nth-child(3) strong{
+                background: url("../images/start.png") no-repeat 2px center;
+                background-size:12px ;
+            }
             li{
                 float: left;
                 padding: 0 5px;
                 line-height: 35px;
+                position: relative;
+                cursor: pointer;
                 i{
                     display: block;
                     float: left;
                     width: 16px;
                     height: 35px;
                     display: block;
+                    background: url("../images/jiantou.png")no-repeat center;
+                    background-size:8px ;
                 }
                 span{
                     float: left;
@@ -107,6 +147,32 @@ a{
                     width: 17px;
                     height: 35px;
                 }
+                div{
+                    display: none;
+                    width: 85px;
+                    height: auto;
+                    overflow: hidden;
+                    background: #fff;
+                    position: absolute;
+                    top: 35px;
+                    left:0;
+                    z-index: 99999999;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+                    ul{
+                        li{
+                            text-indent: 3px;
+                            float: none;
+                        }
+                    }
+                }
+                .toprNav{
+                    width: 1190px;
+                    position:absolute ;
+                    left:-1100px;
+                    height: 500px;
+                }
+                
             }
         }
     }
@@ -353,6 +419,7 @@ a{
                     padding-left: 20px;
                     position: relative;
                     cursor: pointer;
+                    font-size: 14px;
                     .font{
                         padding: 0;
                         margin: 0;
@@ -725,6 +792,7 @@ a{
                     overflow: hidden;
                     margin-top: 8px;
                     padding-left: 15px;
+                    
                     a{
                         width: 80px;
                         display: block;

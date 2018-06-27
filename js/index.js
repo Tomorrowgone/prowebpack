@@ -1,4 +1,23 @@
 $(function(){
+	function userInfo(){
+		if(getCookie("username")!=undefined){
+			$(".log_reg")[0].innerHTML="<span>用户：</span><i>"+getCookie("username")+"</i>";
+			$(".hello")[0].innerHTML="<span class='hello'>Hi！"+getCookie("username")+"</span>"
+		}
+	}
+	userInfo();
+	function goCart(){
+		$(".inde_goCart").click(function(){
+			console.log(1)
+			if(getCookie("username")){
+				window.location.href = "../htmls/cart.html";
+			}else{
+				window.location.href = "../htmls/login.html";
+			}
+			
+		})
+	}
+	goCart();
   	(function autoImg(){
   		//轮播图
             $(".scrollImg ul").append($(".scrollImg ul li").eq(0).clone());
@@ -122,14 +141,15 @@ $(function(){
 			})
 		}
 		goProList();
-//		 $.ajax({
-//		 	type:"get",
-//		 	url:"http://datainfo.duapp.com/shopdata/getclass.php",
-//		 	async:true,
-//		 	success:function(data){
-//		 		console.log(data)
-//		 	}
-//		 });
+		 $.ajax({
+		 	type:"get",
+		 	url:"http://datainfo.duapp.com/shopdata/getclass.php",
+		 	async:true,
+		 	success:function(data){
+		 		data = JSON.parse(data)
+		 		console.log(data)
+		 	}
+		 });
 		 function getHotGoods(){
 		 	$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",function(data){
 		 		var $HotGoodsList = $(".hotGoods_list ul");

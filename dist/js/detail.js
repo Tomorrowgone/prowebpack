@@ -7,15 +7,24 @@ $(function(){
 	var oBigArea = document.getElementById("bigArea");
 	var oBigImg = oBigArea.children[0];
 	var smallArea=document.getElementById("smallArea");		
-	var smaImg = smallArea.children[0];
 	var goodsId = getCookie("goodsId");
 	var cartId = getCookie("cartId");
 	console.log(goodsId);
 	console.log(cartId);
 	$.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{classID:cartId,goodsID:goodsId},function(data){
 		oBigImg.src= data[0].goodsListImg;
-		smaImg.src = data[0].goodsListImg;
 		midImg.src = data[0].goodsListImg;
+		console.log(JSON.parse(data[0].imgsUrl)[1])
+		for(var a =0 ;a<JSON.parse(data[0].imgsUrl).length;a++){
+			var smaImg = document.createElement("img");
+			smaImg.src=JSON.parse(data[0].imgsUrl)[a];
+			smallArea.appendChild(smaImg)
+		}
+		$("#smallArea img").mouseover(function(){
+			console.log($(this)[0].src)
+			$(this).parent().siblings("#midArea").find("img")[0].src = $(this)[0].src;
+			$(this).parent().siblings("#bigArea").find("img")[0].src = $(this)[0].src;
+		})
 		var str = `
 			<div class="Info_tit">
 							${data[0].detail}
@@ -41,22 +50,26 @@ $(function(){
 		`;
 		$("#detailInfo").html(str)
 		$(".addcart").click(function(){
-			if(getCookie("cart")!=undefined){
-				var obj = JSON.parse(getCookie("cart"));
-			}else{
-				var obj={}
+			if(getCookie("username")){
+				if(getCookie("cart")!=undefined){
+					var obj = JSON.parse(getCookie("cart"));
+				}else{
+					var obj={}
+				}
+				var goodsID = $(".addcart").attr("data-id");
+				if(obj[goodsID]==undefined){
+					obj[goodsID]=1;
+				}else{
+					obj[goodsID]++;
+				}
+				var objStr = JSON.stringify(obj);
+				console.log(obj)
+				setCookie("cart",objStr,7);
+				setCookie("cartId",cartId,7);
+				}else{
+					window.location.href = "../htmls/login.html";
 			}
-			var goodsID = $(".addcart").attr("data-id");
-			if(obj[goodsID]==undefined){
-				obj[goodsID]=1;
-			}else{
-				obj[goodsID]++;
-			}
-			var objStr = JSON.stringify(obj);
-			console.log(obj)
-			setCookie("cart",objStr,7);
-			setCookie("cartId",cartId,7);
-			window.location.href="../htmls/cart.html";
+			
 		})
 	})
 	function move(){
